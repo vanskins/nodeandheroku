@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const app = express();
-
-mongoose.connect('mongodb://localhost/ninjago');
+mongoose.connect('mongodb://vanskins:vansabacajan1212@ds245357.mlab.com:45357/ninjago');
+// mongoose.connect('mongodb://localhost/ninjago');
 mongoose.Promise = global.Promise;
 
 app.use(express.static('public'))
