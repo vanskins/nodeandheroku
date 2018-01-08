@@ -18,6 +18,6 @@ app.use((err, req, res, next) => {
   console.log(err);
   res.status(422).send({ error: err.message });
 });
-app.listen(process.env.port || 4000, () => {
+app.listen(process.env.PORT || 1000, () => {
   console.log('SERVER IS LISTENING FOR REQUEST');
 });
